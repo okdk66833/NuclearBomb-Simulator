@@ -41,4 +41,4 @@ tesorflow
 데이터셋: [NUKEMAP by Alex Wellerstein](https://nuclearsecrecy.com/nukemap/)
 
 ## 기타
-- 분류: 2023 고등학교 동아리
+- 분류: 2023 고등학교 동아리 프로젝트
