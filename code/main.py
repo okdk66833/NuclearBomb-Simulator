@@ -229,7 +229,7 @@ def W_info():
     infoWla05=tk.Label(infoW,text="31219 이장현 : 프록그램 제작 보조, 자료조사/분석 ",font=Dfont3,bg=Dbg,fg=Dfg,anchor="w")
     infoWla06=tk.Label(infoW,text="31222 천인희 : 자료조사/분석, 시스템UI 이미지 제작",font=Dfont3,bg=Dbg,fg=Dfg,anchor="w")
     infoWla07=tk.Label(infoW,text="흥진고\n2023",font=Dfont1,bg=Dbg,fg=Dfg)
-    img=ImageTk.PhotoImage(Image.open("..\\image\\HJ.png"))
+    img=ImageTk.PhotoImage(Image.open("..\\Img\\HJ.png"))
     infoWla08=tk.Label(infoW,image=img,bg=Dbg,fg=Dfg,anchor="center")
 
     infoWlab1=tk.Label(infoW,font=("나눔고딕",3))
@@ -569,8 +569,8 @@ bu04=tk.Button(main,text="인공신경망 정보",font=Dfont2,bg=Dbg,fg=Dfg,comm
 bu05=tk.Button(main,text="프로그램 정보",font=Dfont2,bg=Dbg,fg=Dfg,command=W_info)
 
 #la16=tk.Label(main,text="폭발 이미지")
-img1=tk.PhotoImage(file="..\\image\\B1.png",master=button)
-img2=tk.PhotoImage(file="..\\image\\B2.png",master=button)
+img1=tk.PhotoImage(file="..\\Img\\B1.png",master=button)
+img2=tk.PhotoImage(file="..\\Img\\B2.png",master=button)
 bu07=tk.Button(button,image=img1,bg=Dbg,fg=Dfg,anchor="center", relief="flat",command=calc)
 
 lab1=tk.Label(main,font=("나눔고딕",3))
