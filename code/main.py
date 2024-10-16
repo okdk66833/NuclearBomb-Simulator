@@ -68,6 +68,9 @@ y_values = [[0.01, 0.02, 0.06, 0.12, 0.14, 0.32, 0.43],
             [1.47, 7.53, 9.68, 20.4, 61.6, 52.3, 6.82],
             [1.51, 7.73, 9.9, 20.8, 62.9, 53.5, 7.05]]
 
+plt.rcParams['font.family'] ='Malgun Gothic'
+plt.rcParams['axes.unicode_minus'] =False
+
 # 데이터 준비: x_values, y_values
 x_train = np.array(x_values).reshape(-1, 1)
 y_train = np.array(y_values)
