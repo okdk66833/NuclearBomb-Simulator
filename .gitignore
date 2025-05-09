@@ -7,3 +7,6 @@
 # build
 src/build
 *.spec
+
+#log
+**/log.txt
