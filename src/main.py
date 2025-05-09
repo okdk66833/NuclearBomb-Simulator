@@ -99,7 +99,7 @@ model.compile(loss='mean_squared_error',
 model.fit(x_train, y_train, epochs=1000, verbose=0, validation_split=0.2)
 
 # 한글 폰트 설정
-rcParams['font.family'] = 'NanumGothic'
+rcParams['font.family'] = 'NanumGothic.ttf'
 
 #그래프 색 변경
 plt.style.use('dark_background')
@@ -176,6 +176,7 @@ ar,fr,hr,mr,tr,lr,rr=0.0,0.0,0.0,0.0,0.0,0.0,0.0
 dpeople,darea=0.0,0.0 #피해자, 피해거리
 #창 선언 main
 main = tk.Tk()
+main.iconbitmap("img\\icon.ico")
 main.title("핵미사일 시뮬레이터")
 #main.geometry("800x1000")
 main.resizable(False, False)
@@ -232,7 +233,7 @@ def W_info():
     infoWla05=tk.Label(infoW,text="31219 이장현 : 프록그램 제작 보조, 자료조사/분석 ",font=Dfont3,bg=Dbg,fg=Dfg,anchor="w")
     infoWla06=tk.Label(infoW,text="31222 천인희 : 자료조사/분석, 시스템UI 이미지 제작",font=Dfont3,bg=Dbg,fg=Dfg,anchor="w")
     infoWla07=tk.Label(infoW,text="흥진고\n2023",font=Dfont1,bg=Dbg,fg=Dfg)
-    img=ImageTk.PhotoImage(Image.open("..\\Img\\HJ.png"))
+    img=ImageTk.PhotoImage(Image.open("img\\HJ.png"))
     infoWla08=tk.Label(infoW,image=img,bg=Dbg,fg=Dfg,anchor="center")
 
     infoWlab1=tk.Label(infoW,font=("나눔고딕",3))
@@ -569,11 +570,11 @@ la14=tk.Label(main,text="피해자",font=Dfont3,bg=Dbg,fg=Dfg,anchor="w")
 la15=tk.Label(main,text=" ",font=Dfont3,bg=Dbg,fg=Dfg,anchor="e")
 
 bu04=tk.Button(main,text="인공신경망 정보",font=Dfont2,bg=Dbg,fg=Dfg,command=W_arti)
-bu05=tk.Button(main,text="프로그램 정보",font=Dfont2,bg=Dbg,fg=Dfg,command=W_info)
+#bu05=tk.Button(main,text="프로그램 정보",font=Dfont2,bg=Dbg,fg=Dfg,command=W_info)
 
 #la16=tk.Label(main,text="폭발 이미지")
-img1=tk.PhotoImage(file="..\\Img\\B1.png",master=button)
-img2=tk.PhotoImage(file="..\\Img\\B2.png",master=button)
+img1=tk.PhotoImage(file="img\\B1.png",master=button)
+img2=tk.PhotoImage(file="img\\B2.png",master=button)
 bu07=tk.Button(button,image=img1,bg=Dbg,fg=Dfg,anchor="center", relief="flat",command=calc)
 
 lab1=tk.Label(main,font=("나눔고딕",3))
@@ -609,7 +610,7 @@ la14.grid(row=11,column=1,sticky="nsew")
 la15.grid(row=11,column=2,sticky="nsew")
 lab4.grid(row=12,column=0,columnspan=3,sticky="nsew")
 bu04.grid(row=13,column=0,sticky="nsew")
-bu05.grid(row=13,column=1,sticky="nsew")
+#bu05.grid(row=13,column=1,sticky="nsew")
 
 def on_button_click(event):
     bu07.config(image=img2)
