@@ -1,2 +1,9 @@
 # cache
 *.pyc
+
+#executable
+*.exe
+
+# build
+src/build
+*.spec

@@ -9,6 +9,9 @@ from sklearn.preprocessing import MinMaxScaler
 import os
 import sys
 os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+log_file = open("log.txt", "w", encoding="utf-8")
+sys.stdout = log_file
+sys.stderr = log_file
 x_values = [0.02, 0.1, 0.3, 0.5, 6, 10, 15, 20, 45, 60, 100, 150, 300, 340, 350, 455, 500,
             800, 1000, 1200, 2300, 3300, 4000, 5000, 9000, 10400, 15000, 50000, 100000,
             6000, 7000, 8000, 10000, 11000, 12000, 13000, 14000, 16000, 19000, 21000, 24000,
